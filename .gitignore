@@ -5,6 +5,7 @@ yarn-error.log
 /cypress/screenshots/
 /__sapper__/
 secrets.txt
-static/data
-static/que-comer-en-tijuana
-data
+images
+machine-learning/env
+machine-learning/data
+__pycache__
