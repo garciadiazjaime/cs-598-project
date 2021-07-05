@@ -4,7 +4,7 @@ from tensorflow import keras
 # Define a simple sequential model
 def create_model():
   model = tf.keras.models.Sequential([
-    keras.layers.Conv2D(32,3,padding="same", activation="relu", input_shape=(224,224,3)),
+    keras.layers.Conv2D(32, 3,padding="same", activation="relu", input_shape=(224, 224, 3)),
     keras.layers.MaxPool2D(),
     keras.layers.Conv2D(32, 3, padding="same", activation="relu"),
     keras.layers.MaxPool2D(),
@@ -13,7 +13,7 @@ def create_model():
     keras.layers.Dropout(0.4),
     keras.layers.Flatten(),
     keras.layers.Dense(128,activation="relu"),
-    keras.layers.Dense(2, activation="softmax")
+    keras.layers.Dense(6, activation="softmax")
   ])
 
   model.compile(optimizer='adam',

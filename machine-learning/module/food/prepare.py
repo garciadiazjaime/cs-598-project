@@ -2,7 +2,7 @@ import cv2
 import os
 import numpy as np
 
-categories = ['tacos', 'pizza'] #, 'dessert', 'sandwich', 'seafood', 'drink']
+categories = ['dessert', 'drink', 'pizza', 'sandwich', 'seafood', 'tacos']
 img_size = 224
 
 def get_categories():
