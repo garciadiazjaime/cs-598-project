@@ -10,3 +10,5 @@ machine-learning/env
 machine-learning/data
 __pycache__
 api/node_modules
+lambda/*.zip
+lambda/*/node_modules/
