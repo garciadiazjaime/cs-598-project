@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import Loader from '../components/loader.svelte'
 
 	let showLabel = false
 	let isFood = false
@@ -121,20 +122,6 @@
 </script>
 
 <style>
-.loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 button {
 	background-color: white;
 	font-size: 32px;
@@ -159,10 +146,7 @@ button:hover {
 		<button id="snap" on:click={clickHandler}>Get nutritional facts 🧞</button>
 	</p>
 
-	{#if loading}
-		<div class="loader"></div>
-		<br />
-	{/if}
+	<Loader show={loading} />
 
 	<canvas id="canvas" width="640" height="480"></canvas>
 
