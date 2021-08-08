@@ -143,7 +143,7 @@ button:hover {
 
 {#if isVideoOn}
 	<p>
-		<button id="snap" on:click={clickHandler}>Get nutritional facts 🧞</button>
+		<button id="snap" on:click={clickHandler}>Get nutrition facts 🧞</button>
 	</p>
 
 	<Loader show={loading} />

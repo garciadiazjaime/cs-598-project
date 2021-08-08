@@ -19,7 +19,7 @@
       return alert('Sorry, did not work this time :( try again later')
     }
 
-    const data = response.json();
+    const data = await response.json();
 
     console.log('data', data)
   }
